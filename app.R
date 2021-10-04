@@ -262,8 +262,8 @@ server <- function(input, output, session){
                            " (", 
                            100 * round(rowSums(sim_summary[c("tp_piq", "fp_piq", "fn_piq", "tn_piq")], 
                                              na.rm = TRUE) / input$sim_n, 3) , 
-                           "%) disagreements. These are shown in the table above. ",
-                           "Given the inputs to this simulation, when a disagreement does occur, 
+                           "%) disagreements. These are shown in the table above. 
+                           Given the inputs to this simulation, when a disagreement does occur, 
                            the ratio of the odds in favor of the pIQ-based comparison being correct, 
                            relative to the odds in favor of the norm-based comparison being correct, is OR = ", 
                           round(sim_summary$or_piq, 2),
